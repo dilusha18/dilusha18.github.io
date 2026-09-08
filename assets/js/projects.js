@@ -4,6 +4,7 @@
 const projectDetails = [
   {
     "id": "pattiya",
+    "githubUrl": "https://github.com/Team-Aquilon",
     "type": "Team innovation project / 2026 - Present",
     "overview": "Pattiya is a smart cattle collar being developed to monitor methane, estrus, heat stress, and location. The system combines a wearable device, an environmental station, and farmer-facing alerts.",
     "contributions": [
@@ -97,6 +98,7 @@ const projectDetails = [
   },
   {
     "id": "roboroarz",
+    "githubUrl": "https://github.com/Roboroarz-Path-Finders",
     "type": "Team PathFinder / RoboRoarZ Sri Lanka 2026",
     "overview": "An autonomous differential-drive robot built to detect maze walls, explore routes, and complete a shortest-path run under competition constraints.",
     "contributions": [
@@ -130,6 +132,7 @@ const projectDetails = [
   },
   {
     "id": "micromouse",
+    "githubUrl": "https://github.com/Robofest25-Micromouse-PathFinder",
     "type": "Team competition project / ROBOFEST 2025",
     "overview": "A compact autonomous micromouse platform for maze exploration, wall detection, and shortest-path solving.",
     "contributions": [
@@ -171,6 +174,7 @@ const projectDetails = [
   },
   {
     "id": "bumblebee",
+    "githubUrl": "https://github.com/Team-Bumblebee-SLRC-2026",
     "type": "Team Bumblebee / SLRC 2026",
     "overview": "A physical and virtual autonomous robot system developed for real-time competition tasks and changing obstacle conditions.",
     "contributions": [

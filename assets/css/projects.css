@@ -167,6 +167,10 @@ body::before { height: 4px; background: var(--teal); }
 .result-badge--gold { color: var(--blue); }
 .project-open { align-items: center; gap: 12px; margin-top: 16px; font-size: 14px; font-weight: 650; }
 .project-open:hover { color: var(--text); border-color: var(--text); }
+.project-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 18px; }
+.project-actions .project-open { margin-top: 0; }
+.project-github { min-height: 44px; }
+.project-github ion-icon { font-size: 18px; }
 .ongoing-card > div > p:not(.ongoing-label) { font-size: 15px; line-height: 1.75; }
 .ongoing-label { color: var(--blue); font-size: 12px; }
 .ongoing-card h4 { font-size: 21px; line-height: 1.35; font-weight: 650; }

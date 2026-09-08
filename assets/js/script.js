@@ -23,6 +23,20 @@ function element(tag, className, text) {
   return node;
 }
 
+function githubLink(project) {
+  const link = element('a', 'secondary-action project-github', 'View on GitHub');
+  link.href = project.githubUrl;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.title = 'Open team GitHub page in a new tab';
+  link.setAttribute('aria-label', 'View ' + project.title + ' on GitHub (opens in a new tab)');
+  const icon = element('ion-icon');
+  icon.setAttribute('name', 'logo-github');
+  icon.setAttribute('aria-hidden', 'true');
+  link.prepend(icon);
+  return link;
+}
+
 function imageLink(file, caption) {
   const link = element('a', 'gallery-image-link');
   link.href = mediaPath(file);
@@ -80,6 +94,11 @@ function renderProject(project) {
   const heading = element('h2', '', project.title);
   heading.tabIndex = -1;
   header.append(heading);
+  if (project.githubUrl) {
+    const actions = element('div', 'project-actions');
+    actions.append(githubLink(project));
+    header.append(actions);
+  }
   detail.append(header);
 
   const gallery = element('section', 'project-gallery');
@@ -174,7 +193,13 @@ cards.forEach((card, index) => {
   arrow.setAttribute('name', 'arrow-forward-outline');
   arrow.setAttribute('aria-hidden', 'true');
   more.append(arrow);
-  card.append(more);
+  if (project.githubUrl) {
+    const actions = element('div', 'project-actions');
+    actions.append(more, githubLink(project));
+    card.append(actions);
+  } else {
+    card.append(more);
+  }
 });
 
 document.querySelectorAll('.certificate-link').forEach((link) => {
