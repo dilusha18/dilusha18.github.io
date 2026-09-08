@@ -101,11 +101,9 @@ h2 { scroll-margin-top: 88px; }
 .social-actions a:hover { border-color: var(--accent); color: var(--accent); }
 .contact-toggle { display: none; }
 .workspace { min-width: 0; }
-.section-nav { position: sticky; top: 0; z-index: 20; display: flex; gap: 32px; min-height: 65px; align-items: stretch; background: var(--paper); border-bottom: 1px solid var(--ink); }
-.nav-link { position: relative; padding: 18px 0 14px; min-height: 60px; background: transparent; border: 0; border-bottom: 4px solid transparent; font-size: 14px; font-weight: 600; cursor: pointer; }
-.nav-link::before { content: attr(data-index); margin-right: 9px; color: var(--subtle); font: 10px var(--mono); }
+.section-nav { position: sticky; top: 0; z-index: 20; display: flex; gap: 36px; min-height: 74px; align-items: stretch; background: var(--paper); border-bottom: 1px solid var(--ink); }
+.nav-link { position: relative; padding: 20px 0 16px; min-height: 73px; background: transparent; border: 0; border-bottom: 4px solid transparent; font-size: 18px; font-weight: 600; cursor: pointer; }
 .nav-link.active { border-color: var(--green); color: var(--green); }
-.nav-link.active::before { color: var(--green); }
 .nav-link:hover { color: var(--green); }
 .nav-signature { margin-left: auto; display: flex; align-items: center; color: var(--subtle); font: 11px var(--mono); }
 .page { display: none; padding: 42px 0 8px; }
@@ -252,9 +250,8 @@ h2 { scroll-margin-top: 88px; }
   .profile-intro p { max-width: 230px; font-size: 10px; }
   .contact-list { grid-template-columns: 1fr 1fr; }
   .contact-list li:first-child { grid-column: 1 / -1; }
-  .section-nav { min-height: 57px; gap: 0; justify-content: space-between; }
-  .nav-link { min-height: 56px; padding: 14px 0 10px; font-size: 12px; }
-  .nav-link::before { margin-right: 5px; font-size: 9px; }
+  .section-nav { min-height: 64px; gap: 0; justify-content: space-between; }
+  .nav-link { min-height: 63px; padding: 16px 0 12px; font-size: 15px; }
   .page-header h2 { font-size: 46px; }
   .intro-header h2 { font-size: 38px; }
   .page-header > p:last-child, .intro-copy { font-size: 14px; line-height: 1.85; }
