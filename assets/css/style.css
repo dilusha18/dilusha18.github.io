@@ -65,6 +65,8 @@ h2 { scroll-margin-top: 88px; }
 .profile-intro h1 { max-width: 530px; font: 600 54px/1.02 var(--display); text-transform: uppercase; }
 .profile-intro h1 span { display: block; }
 .profile-intro p { max-width: 400px; margin-top: 14px; color: var(--accent); font-size: 12px; line-height: 1.6; }
+.profile-intro .profile-focus { max-width: none; margin-top: 10px; color: #edf0ed; font-size: 13px; font-weight: 500; line-height: 1.7; text-wrap: pretty; }
+.profile-focus span { white-space: nowrap; }
 .profile-details { min-width: 0; padding-left: 32px; border-left: 1px solid #49554e; }
 .contact-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; margin-bottom: 20px; }
 .contact-list li { min-width: 0; display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 9px; }
