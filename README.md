@@ -1,44 +1,30 @@
-# vCard - Personal portfolio
+# Dilusha Heshan Hemachandra - Engineering Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Personal portfolio for Dilusha Heshan Hemachandra, a Mechanical Engineering undergraduate at the University of Moratuwa focused on product development, mechanical design, robotics, mechatronics, industrial automation, and R&D.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Portfolio content
 
-## Demo
+- Mechanical design and CAD capabilities
+- Product development, robotics, embedded systems, and IoT work
+- Six selected engineering projects and two ongoing projects
+- Education, A/L results, technical skills, and competition achievements
+- Downloadable CV and direct contact links
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## Built with
 
-## Prerequisites
+- Semantic HTML5
+- Responsive CSS
+- Vanilla JavaScript
+- Ionicons
 
-Before you begin, ensure you have met the following requirements:
+## Live site
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+The site is intended for GitHub Pages at [dilusha18.github.io](https://dilusha18.github.io/).
 
-## Installing vCard
+## Local preview
 
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+Open `index.html` directly or serve the directory with any static web server.
 
 ## License
 
-MIT
+This project retains the MIT license from the original vCard template foundation.

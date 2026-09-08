@@ -1,1201 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
+  <meta name="description" content="Portfolio of Dilusha Heshan Hemachandra, a Mechanical Engineering undergraduate focused on product development, robotics, mechatronics, industrial automation, and R&amp;D.">
+  <meta name="keywords" content="Dilusha Hemachandra, Mechanical Engineering, University of Moratuwa, Robotics, Mechatronics, Product Development, CAD, SolidWorks, Automation">
+  <meta name="author" content="Dilusha Heshan Hemachandra">
+  <meta name="theme-color" content="#111418">
+  <title>Dilusha Heshan Hemachandra | Mechanical Engineering Portfolio</title>
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+  <main class="site-shell">
+    <aside class="profile-panel" data-sidebar>
+      <div class="profile-heading">
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="./assets/media/dilusha-profile.png" alt="Portrait of Dilusha Heshan Hemachandra">
+          <span class="status-dot" aria-hidden="true"></span>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
+        <div class="profile-intro">
+          <span class="monogram" aria-hidden="true">DH</span>
+          <h1>Dilusha Heshan Hemachandra</h1>
+          <p>Mechanical Engineering Undergraduate</p>
+        </div>
+        <button class="contact-toggle" type="button" data-sidebar-btn aria-expanded="false">
+          <span>Contact details</span>
+          <ion-icon name="chevron-down-outline" aria-hidden="true"></ion-icon>
         </button>
-
       </div>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
-            </div>
-
+      <div class="profile-details">
+        <p class="availability"><span aria-hidden="true"></span> Open to internships in Automation and R&amp;D</p>
+        <ul class="contact-list" aria-label="Contact details">
+          <li>
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            <div><span>Email</span><a href="mailto:dilushahemachandra18@gmail.com">dilushahemachandra18@gmail.com</a></div>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
-            </div>
-
+          <li>
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            <div><span>Phone</span><a href="tel:+94787002521">+94 78 700 2521</a><a href="tel:+94757002529">+94 75 700 2529</a></div>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
+          <li>
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            <div><span>Location</span><p>Kegalle, Sri Lanka</p></div>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
         </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
+        <div class="profile-actions">
+          <a class="primary-action" href="./assets/media/Dilusha-Hemachandra-CV.pdf" download>
+            <ion-icon name="download-outline" aria-hidden="true"></ion-icon>Download CV
+          </a>
+          <div class="social-actions" aria-label="Social profiles">
+            <a href="https://github.com/dilusha18" target="_blank" rel="noreferrer" aria-label="GitHub profile" title="GitHub"><ion-icon name="logo-github" aria-hidden="true"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/dilusha-hemachandra-0921633b3" target="_blank" rel="noreferrer" aria-label="LinkedIn profile" title="LinkedIn"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon></a>
+          </div>
+        </div>
       </div>
-
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
+    <div class="workspace">
+      <nav class="section-nav" aria-label="Portfolio sections">
+        <button class="nav-link active" type="button" data-nav-link data-target="about">About</button>
+        <button class="nav-link" type="button" data-nav-link data-target="projects">Projects</button>
+        <button class="nav-link" type="button" data-nav-link data-target="resume">Resume</button>
+        <button class="nav-link" type="button" data-nav-link data-target="contact">Contact</button>
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+      <div id="content" tabindex="-1">
+        <article class="page active" data-page="about">
+          <header class="page-header intro-header">
+            <p class="eyebrow">Mechanical Engineering Portfolio</p>
+            <h2>Engineering practical systems from concept to working prototype.</h2>
+            <p class="intro-copy">I work across mechanical design, product development, robotics, and automation, connecting CAD, electronics, and software to solve real engineering problems.</p>
+            <div class="intro-actions">
+              <button class="primary-action" type="button" data-go-to="projects"><ion-icon name="construct-outline" aria-hidden="true"></ion-icon>Explore projects</button>
+              <a class="secondary-action" href="mailto:dilushahemachandra18@gmail.com"><ion-icon name="mail-outline" aria-hidden="true"></ion-icon>Get in touch</a>
             </div>
+          </header>
 
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
+          <section class="content-section" aria-labelledby="about-title">
+            <div class="section-heading"><p class="section-index">01</p><div><h3 id="about-title">About me</h3><p>Mechanical design at the center, multidisciplinary engineering around it.</p></div></div>
+            <div class="about-copy">
+              <p>I'm a Mechanical Engineering undergraduate at the University of Moratuwa with a strong interest in product development, robotics, mechatronics, industrial automation, and R&amp;D. I enjoy turning engineering ideas into practical systems, from early concepts and CAD models to automated systems, prototypes, testing, and functional products.</p>
+              <p>My core focus is mechanical design and product development, with hands-on experience in SolidWorks, AutoCAD, mechanism design, mechanical assemblies, rapid prototyping, and basic FEA/CFD. Through academic and innovation projects, I have worked on autonomous robots, UAV mechanisms, wearable IoT devices, gearbox design, and reverse-engineered products.</p>
+              <p>Alongside mechanical engineering, I have experience with embedded systems, PCB design, sensors, ESP32, Arduino, Raspberry Pi, Python, and C++. This multidisciplinary background allows me to work comfortably at the intersection of mechanics, electronics, and software.</p>
             </div>
-
+            <div class="stat-row" aria-label="Portfolio highlights">
+              <div><strong>8</strong><span>Engineering projects</span></div>
+              <div><strong>4</strong><span>Competition results</span></div>
+              <div><strong>3.09</strong><span>CGPA out of 4.00</span></div>
+            </div>
           </section>
 
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <section class="content-section" aria-labelledby="capabilities-title">
+            <div class="section-heading"><p class="section-index">02</p><div><h3 id="capabilities-title">What I do</h3><p>Capabilities built through coursework, competitions, and team projects.</p></div></div>
+            <div class="capability-grid">
+              <article class="capability-item"><span class="capability-icon"><ion-icon name="cube-outline" aria-hidden="true"></ion-icon></span><div><h4>Mechanical Design &amp; CAD</h4><p>Designing parts, assemblies, and mechanisms using SolidWorks and AutoCAD, with attention to functionality, manufacturability, and practical engineering requirements.</p></div></article>
+              <article class="capability-item"><span class="capability-icon"><ion-icon name="build-outline" aria-hidden="true"></ion-icon></span><div><h4>Product Development &amp; Prototyping</h4><p>Turning engineering concepts into functional prototypes through iterative design, rapid prototyping, testing, validation, and continuous improvement.</p></div></article>
+              <article class="capability-item"><span class="capability-icon"><ion-icon name="hardware-chip-outline" aria-hidden="true"></ion-icon></span><div><h4>Robotics &amp; Mechatronics</h4><p>Developing robotic and automated systems by integrating mechanisms, sensors, actuators, electronics, and control systems for real applications.</p></div></article>
+              <article class="capability-item"><span class="capability-icon"><ion-icon name="radio-outline" aria-hidden="true"></ion-icon></span><div><h4>Embedded Systems &amp; IoT</h4><p>Building sensor-based connected systems using ESP32, Arduino, Raspberry Pi, PCB design, and wireless communication for monitoring and automation.</p></div></article>
             </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
+          </section>
+
+          <section class="content-section" aria-labelledby="toolbox-title">
+            <div class="section-heading"><p class="section-index">03</p><div><h3 id="toolbox-title">Engineering toolbox</h3><p>Tools I use to move between design, analysis, hardware, and control.</p></div></div>
+            <ul class="tool-list" aria-label="Engineering tools and technologies">
+              <li>SolidWorks</li><li>AutoCAD</li><li>MATLAB</li><li>ANSYS</li><li>Webots</li><li>Altium Designer</li><li>Python</li><li>C++</li><li>ESP32</li><li>Arduino</li><li>Raspberry Pi</li><li>LoRa</li><li>PLC Programming</li><li>Rapid Prototyping</li>
             </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </section>
+        </article>
+
+        <article class="page" data-page="projects">
+          <header class="page-header">
+            <p class="eyebrow">Selected work</p><h2>Projects</h2>
+            <p>Robotics, product design, embedded systems, and mechanical analysis developed through team competitions and academic work.</p>
+          </header>
+          <section class="project-grid" aria-label="Featured projects">
+            <article class="project-card project-card--wide">
+              <figure class="project-media"><img src="./assets/media/pattiya-cad.jpg" alt="CAD assembly for the Pattiya smart cattle collar" loading="lazy"><figcaption>Product development / 2026 - Present</figcaption></figure>
+              <div class="project-body"><div class="project-title-row"><div><p class="project-number">01</p><h3>Pattiya Smart IoT Cattle Collar</h3></div><span class="result-badge">SPARK Semi-Finalist</span></div><p>Developing a weather-resistant cattle wearable for methane, estrus, heat-stress, health, and geofence monitoring. My work includes CAD enclosure development, component layout, sensor integration support, and machine-learning analysis of multi-sensor data.</p><ul class="tag-list"><li>SolidWorks</li><li>ESP32</li><li>LoRa</li><li>Altium</li><li>Python</li><li>Machine Learning</li></ul></div>
+            </article>
+            <article class="project-card">
+              <figure class="project-media"><img src="./assets/media/roboroarz-champions.jpg" alt="Team PathFinders holding their RoboRoarZ champions award" loading="lazy"><figcaption>Autonomous robotics / 2026</figcaption></figure>
+              <div class="project-body"><div class="project-title-row"><div><p class="project-number">02</p><h3>RoboRoarZ PathFinder</h3></div><span class="result-badge result-badge--gold">Champion</span></div><p>Co-developed a differential-drive maze-solving robot, contributing to chassis integration, sensor placement, motor-driver connections, embedded control, and motion tuning.</p><ul class="tag-list"><li>C++</li><li>Arduino</li><li>SolidWorks</li></ul></div>
+            </article>
+            <article class="project-card">
+              <figure class="project-media"><img src="./assets/media/micromouse-arena.jpeg" alt="Micromouse robot navigating the ROBOFEST maze" loading="lazy"><figcaption>Competition robot / 2025</figcaption></figure>
+              <div class="project-body"><div class="project-title-row"><div><p class="project-number">03</p><h3>Micromouse PathFinder</h3></div><span class="result-badge">ROBOFEST Finalist</span></div><p>Designed a compact maze-exploration robot with wall detection, embedded electronics, flood-fill path planning, and tuned straight-line and turning control.</p><ul class="tag-list"><li>C++</li><li>Arduino</li><li>SolidWorks</li><li>Altium</li></ul></div>
+            </article>
+            <article class="project-card project-card--wide">
+              <figure class="project-media"><img src="./assets/media/bumblebee-robot.jpg" alt="Team Bumblebee autonomous robot" loading="lazy"><figcaption>System integration / 2026</figcaption></figure>
+              <div class="project-body"><div class="project-title-row"><div><p class="project-number">04</p><h3>Team Bumblebee Dual-System Robot</h3></div><span class="result-badge">SLRC Finalist</span></div><p>Supported a dual physical and virtual autonomous system for changing obstacle conditions, including robot simulation, platform integration, and API-based transfer of decoded coordinates and navigation commands.</p><ul class="tag-list"><li>Python</li><li>Raspberry Pi</li><li>Arduino</li><li>Webots</li></ul></div>
+            </article>
+            <article class="project-card">
+              <figure class="project-media project-media--drawing"><img src="./assets/media/helmet-eps-drawing.png" alt="Engineering drawing of a reverse-engineered helmet EPS liner" loading="lazy"><figcaption>Reverse engineering / 2026</figcaption></figure>
+              <div class="project-body"><div class="project-title-row"><div><p class="project-number">05</p><h3>Motorcycle Helmet EPS Analysis</h3></div></div><p>Measured and reconstructed helmet and EPS-liner geometry, then examined liner thickness, segmentation, impact-management features, and manufacturability.</p><ul class="tag-list"><li>SolidWorks</li><li>AutoCAD</li><li>Metrology</li></ul></div>
+            </article>
+            <article class="project-card">
+              <figure class="project-media"><img src="./assets/media/smartwall-team.jpeg" alt="Smart wall painting robot with the project team" loading="lazy"><figcaption>Automation prototype</figcaption></figure>
+              <div class="project-body"><div class="project-title-row"><div><p class="project-number">06</p><h3>Smart Wall Painting Robot</h3></div></div><p>Developed an automated wall-painting system combining mechanical design, motion control, fabrication, and embedded hardware to improve painting consistency.</p><ul class="tag-list"><li>SolidWorks</li><li>Arduino</li><li>C++</li></ul></div>
+            </article>
+          </section>
+
+          <section class="ongoing-section" aria-labelledby="ongoing-title">
+            <div class="section-heading"><p class="section-index">In progress</p><div><h3 id="ongoing-title">Ongoing work</h3><p>Current mechanical design and mechanism-development studies.</p></div></div>
+            <div class="ongoing-grid">
+              <article class="ongoing-card">
+                <div class="gearbox-visual" aria-hidden="true"><ion-icon name="settings-outline"></ion-icon><div><strong>11 kW</strong><span>150 / 250 / 335 rpm</span></div></div>
+                <div><p class="ongoing-label">Machine Design Project</p><h4>Fish Feed Extruder Gearbox</h4><p>Designing a multi-speed gearbox with three forward speeds and reverse operation for an industrial fish-feed extruder. My detailed work covers flange couplings, lubrication selection, bearing calculations, and the internal bearing arrangement.</p><ul class="tag-list"><li>Gearbox Design</li><li>Machine Elements</li><li>Power Transmission</li></ul></div>
+              </article>
+              <article class="ongoing-card ongoing-card--image">
+                <img src="./assets/media/uav-mechanism.png" alt="Kinematic layout of the UAV self-leveling landing gear" loading="lazy">
+                <div><p class="ongoing-label">Mechanism Design</p><h4>UAV Self-Leveling Landing Gear</h4><p>Designed and optimized a passive multi-link landing gear mechanism to maintain near-vertical foot motion and adapt to uneven terrain. MATLAB analysis was used to evaluate linkage geometry, trajectory, and motion constraints.</p><ul class="tag-list"><li>Mechanism Design</li><li>MATLAB</li><li>Optimization</li></ul></div>
+              </article>
             </div>
+          </section>
+        </article>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+        <article class="page" data-page="resume">
+          <header class="page-header"><p class="eyebrow">Background</p><h2>Resume</h2><p>Education, technical capabilities, and competition results supporting my work in mechanical design and intelligent systems.</p></header>
+          <section class="resume-section" aria-labelledby="education-title">
+            <div class="section-heading"><p class="section-index">01</p><div><h3 id="education-title">Education</h3><p>Academic foundations in engineering and physical science.</p></div></div>
+            <div class="timeline">
+              <article class="timeline-item"><div class="timeline-marker"><ion-icon name="school-outline" aria-hidden="true"></ion-icon></div><div class="timeline-content"><div class="timeline-top"><span>2024 - Present</span><strong>CGPA 3.09 / 4.00</strong></div><h4>B.Sc. Engineering in Mechanical Engineering</h4><p>University of Moratuwa, Sri Lanka</p></div></article>
+              <article class="timeline-item"><div class="timeline-marker"><ion-icon name="ribbon-outline" aria-hidden="true"></ion-icon></div><div class="timeline-content"><div class="timeline-top"><span>2020 - 2023</span><strong>Island Rank 532</strong></div><h4>G.C.E. Advanced Level - Physical Science Stream</h4><p>Pinnawala Central College, Sri Lanka</p><ul class="result-list"><li><span>Subjects</span><strong>Combined Mathematics, Physics (A), Chemistry (A)</strong></li><li><span>Z-Score</span><strong>2.2548</strong></li></ul></div></article>
+              <article class="timeline-item"><div class="timeline-marker"><ion-icon name="book-outline" aria-hidden="true"></ion-icon></div><div class="timeline-content"><div class="timeline-top"><span>G.C.E. Ordinary Level</span></div><h4>Secondary Education</h4><p>Pinnawala Central College, Sri Lanka</p><ul class="result-list"><li><span>Results</span><strong>8 A passes and 1 B pass</strong></li></ul></div></article>
+            </div>
+          </section>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+          <section class="resume-section" aria-labelledby="skills-title">
+            <div class="section-heading"><p class="section-index">02</p><div><h3 id="skills-title">Technical skills</h3><p>Grouped by the engineering work they support.</p></div></div>
+            <div class="skill-groups">
+              <article><ion-icon name="cube-outline" aria-hidden="true"></ion-icon><div><h4>Mechanical Design</h4><p>SolidWorks, AutoCAD, mechanism design, mechanical assemblies</p></div></article>
+              <article><ion-icon name="analytics-outline" aria-hidden="true"></ion-icon><div><h4>Simulation &amp; Analysis</h4><p>MATLAB, Webots, ANSYS with basic FEA and CFD</p></div></article>
+              <article><ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon><div><h4>Programming &amp; ML</h4><p>Python, C++, machine learning</p></div></article>
+              <article><ion-icon name="hardware-chip-outline" aria-hidden="true"></ion-icon><div><h4>Embedded &amp; Electronics</h4><p>ESP32, Arduino, Raspberry Pi, LoRa, sensors, Altium Designer</p></div></article>
+              <article><ion-icon name="git-network-outline" aria-hidden="true"></ion-icon><div><h4>Industrial Automation</h4><p>Basic PLC programming and control-system integration</p></div></article>
+              <article><ion-icon name="hammer-outline" aria-hidden="true"></ion-icon><div><h4>Manufacturing</h4><p>Rapid prototyping and design for manufacture</p></div></article>
+            </div>
+          </section>
 
-          </form>
+          <section class="resume-section" aria-labelledby="achievements-title">
+            <div class="section-heading"><p class="section-index">03</p><div><h3 id="achievements-title">Achievements</h3><p>Competition outcomes earned through collaborative engineering.</p></div></div>
+            <ol class="achievement-list">
+              <li><span class="achievement-place">Champion</span><div><h4>RoboRoarZ Sri Lanka International Robotics Competition</h4><p>Team PathFinders / 2026</p></div></li>
+              <li><span class="achievement-place">Finalist</span><div><h4>Sri Lankan Robotics Challenge</h4><p>Team Bumblebee / 2026</p></div></li>
+              <li><span class="achievement-place">Semi-Finalist</span><div><h4>SPARK Challenge</h4><p>Team Pattiya, University of Moratuwa / 2026</p></div></li>
+              <li><span class="achievement-place">Finalist</span><div><h4>SLIIT ROBOFEST - University Category</h4><p>Micromouse / 2025</p></div></li>
+            </ol>
+          </section>
 
-        </section>
+          <a class="resume-download" href="./assets/media/Dilusha-Hemachandra-CV.pdf" download><div><ion-icon name="document-text-outline" aria-hidden="true"></ion-icon><span><strong>Full curriculum vitae</strong><small>PDF document</small></span></div><span>Download <ion-icon name="download-outline" aria-hidden="true"></ion-icon></span></a>
+        </article>
 
-      </article>
+        <article class="page" data-page="contact">
+          <header class="page-header contact-header"><p class="eyebrow">Get in touch</p><h2>Let's discuss an engineering problem.</h2><p>I am open to internship opportunities and collaborations in mechanical design, product development, robotics, mechatronics, industrial automation, and R&amp;D.</p></header>
+          <section class="contact-options" aria-label="Ways to contact Dilusha">
+            <a class="contact-option contact-option--primary" href="mailto:dilushahemachandra18@gmail.com"><ion-icon name="mail-outline" aria-hidden="true"></ion-icon><span><small>Email</small><strong>dilushahemachandra18@gmail.com</strong></span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            <a class="contact-option" href="tel:+94787002521"><ion-icon name="call-outline" aria-hidden="true"></ion-icon><span><small>Primary phone</small><strong>+94 78 700 2521</strong></span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            <a class="contact-option" href="tel:+94757002529"><ion-icon name="call-outline" aria-hidden="true"></ion-icon><span><small>Alternate phone</small><strong>+94 75 700 2529</strong></span><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></a>
+            <a class="contact-option" href="https://www.linkedin.com/in/dilusha-hemachandra-0921633b3" target="_blank" rel="noreferrer"><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon><span><small>LinkedIn</small><strong>Connect professionally</strong></span><ion-icon name="open-outline" aria-hidden="true"></ion-icon></a>
+            <a class="contact-option" href="https://github.com/dilusha18" target="_blank" rel="noreferrer"><ion-icon name="logo-github" aria-hidden="true"></ion-icon><span><small>GitHub</small><strong>github.com/dilusha18</strong></span><ion-icon name="open-outline" aria-hidden="true"></ion-icon></a>
+          </section>
+          <div class="contact-note"><ion-icon name="location-outline" aria-hidden="true"></ion-icon><div><strong>Based in Kegalle, Sri Lanka</strong><p>Studying at the University of Moratuwa.</p></div></div>
+        </article>
+      </div>
 
+      <footer class="site-footer"><p>&copy; <span data-current-year>2026</span> Dilusha Heshan Hemachandra</p><p>Designed around practical engineering work.</p></footer>
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
