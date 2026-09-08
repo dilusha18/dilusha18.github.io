@@ -147,6 +147,26 @@ function renderProject(project) {
 
   const copy = element('div', 'detail-copy');
   copy.append(element('h3', '', 'The project'), element('p', '', project.overview));
+  if (project.article) {
+    const article = element('section', 'project-article');
+    article.setAttribute('aria-labelledby', 'project-article-title');
+    const title = element('h3', '', project.article.title);
+    title.id = 'project-article-title';
+    article.append(element('p', 'project-article-label', 'From my LinkedIn'), title,
+      element('p', '', project.article.description));
+    const link = element('a', 'secondary-action project-article-link', 'Read on LinkedIn');
+    link.href = project.article.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.title = 'Read the article on LinkedIn in a new tab';
+    link.setAttribute('aria-label', 'Read on LinkedIn (opens in a new tab)');
+    const icon = element('ion-icon');
+    icon.setAttribute('name', 'logo-linkedin');
+    icon.setAttribute('aria-hidden', 'true');
+    link.prepend(icon);
+    article.append(link);
+    copy.append(article);
+  }
   copy.append(element('h3', '', 'My contribution'));
   const contributions = element('ul');
   project.contributions.forEach((text) => contributions.append(element('li', '', text)));

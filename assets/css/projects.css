@@ -207,6 +207,11 @@ body::before { height: 4px; background: var(--teal); }
 .detail-copy { max-width: 760px; }
 .detail-copy h3 { font-weight: 650; }
 .detail-copy p, .detail-copy li { color: var(--muted); font-size: 16px; line-height: 1.8; }
+.project-article { margin: 28px 0; padding: 22px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.project-article .project-article-label { color: var(--blue); font-size: 12px; font-weight: 600; }
+.project-article h3 { margin: 8px 0 12px; line-height: 1.4; }
+.project-article-link { margin-top: 18px; color: var(--blue); }
+.project-article-link ion-icon { font-size: 18px; }
 .image-viewer { background: #202427; color: #f4f5f6; border-color: #525c63; border-radius: 4px; }
 .image-viewer::backdrop { background: rgba(18,21,24,.88); }
 .viewer-close { background: #202427; color: white; border-color: #626d75; }

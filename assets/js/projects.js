@@ -5,6 +5,11 @@ const projectDetails = [
   {
     "id": "pattiya",
     "githubUrl": "https://github.com/Team-Aquilon",
+    "article": {
+      "title": "Can a cow's voice tell us when she is entering oestrus?",
+      "description": "How we're exploring dual microphones and stethoscope-based acoustic sensing for oestrus monitoring, and why reliable sensor mounting matters when a cow is moving.",
+      "url": "https://www.linkedin.com/pulse/can-cows-voice-tell-us-when-she-entering-oestrus-dilusha-hemachandra-kbhoc/"
+    },
     "type": "Team innovation project / 2026 - Present",
     "overview": "Pattiya is a smart cattle collar being developed to monitor methane, estrus, heat stress, and location. The system combines a wearable device, an environmental station, and farmer-facing alerts.",
     "contributions": [
