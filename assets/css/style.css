@@ -242,6 +242,18 @@ h2 { scroll-margin-top: 88px; }
   .about-background > h3 { max-width: 460px; margin-bottom: 24px; }
   .certificate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+@media (max-width: 600px) {
+  .timeline { gap: 24px; }
+  .timeline-item { padding-left: 0; }
+  .timeline-marker { display: none; }
+  .timeline-content { padding-bottom: 22px; }
+  .timeline-content h4 { margin-top: 8px; font-size: 19px; line-height: 1.4; text-wrap: pretty; }
+  .timeline-content > p { font-size: 15px; line-height: 1.6; }
+  .result-list { grid-template-columns: 1fr; gap: 0; margin-top: 18px; }
+  .result-list li { grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 16px; padding: 9px 0; border-left: 0; }
+  .result-list li + li { border-top: 1px solid var(--line); }
+  .result-list strong { max-width: 160px; text-align: right; }
+}
 @media (max-width: 520px) {
   .site-shell { width: calc(100% - 32px); }
   .profile-heading { grid-template-columns: 72px minmax(0, 1fr); gap: 14px; }
@@ -275,10 +287,6 @@ h2 { scroll-margin-top: 88px; }
   .capability-icon { width: 36px; height: 36px; font-size: 21px; }
   .capability-item p { font-size: 14px; }
   .tool-list li { font-size: 15px; }
-  .timeline-item { padding-left: 0; }
-  .timeline-marker { display: none; }
-  .timeline-content h4 { font-size: 19px; }
-  .result-list { grid-template-columns: 1fr; gap: 16px; }
   .certificate-grid { gap: 30px 14px; }
   .certificate-grid h4 { font-size: 21px; }
   .certificate-grid p { font-size: 11px; }
