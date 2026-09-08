@@ -6,11 +6,13 @@
   <meta name="description" content="Portfolio of Dilusha Heshan Hemachandra, a Mechanical Engineering undergraduate focused on product development, robotics, mechatronics, industrial automation, and R&amp;D.">
   <meta name="keywords" content="Dilusha Hemachandra, Mechanical Engineering, University of Moratuwa, Robotics, Mechatronics, Product Development, CAD, SolidWorks, Automation">
   <meta name="author" content="Dilusha Heshan Hemachandra">
-  <meta name="theme-color" content="#f3f4f5">
+  <meta name="theme-color" content="#202725">
   <title>Dilusha Heshan Hemachandra | Mechanical Engineering Portfolio</title>
+  <link rel="preload" href="./assets/fonts/barlow-condensed-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/fonts/public-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Refresh the content-hash version when changing a linked CSS or JS file. -->
-  <link rel="stylesheet" href="./assets/css/style.css?v=279b6eed">
-  <link rel="stylesheet" href="./assets/css/projects.css?v=a3c3e98b">
+  <link rel="stylesheet" href="./assets/css/style.css?v=d99ecd39">
+  <link rel="stylesheet" href="./assets/css/projects.css?v=fa254a91">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -22,7 +24,7 @@
           <img class="profile-photo" src="./assets/media/dilusha-profile.png" alt="Portrait of Dilusha Heshan Hemachandra">
         </div>
         <div class="profile-intro">
-          <h1>Dilusha Heshan Hemachandra</h1>
+          <h1>Dilusha Heshan <span>Hemachandra</span></h1>
           <p>Mechanical Engineering Undergraduate</p>
         </div>
         <button class="contact-toggle" type="button" data-sidebar-btn aria-expanded="false">
@@ -60,16 +62,18 @@
 
     <div class="workspace">
       <nav class="section-nav" aria-label="Portfolio sections">
-        <button class="nav-link active" type="button" data-nav-link data-target="about">About</button>
-        <button class="nav-link" type="button" data-nav-link data-target="projects">Projects</button>
-        <button class="nav-link" type="button" data-nav-link data-target="resume">Resume</button>
-        <button class="nav-link" type="button" data-nav-link data-target="contact">Contact</button>
+        <button class="nav-link active" type="button" data-nav-link data-target="about" data-index="01" aria-label="About">About</button>
+        <button class="nav-link" type="button" data-nav-link data-target="projects" data-index="02" aria-label="Projects">Projects</button>
+        <button class="nav-link" type="button" data-nav-link data-target="resume" data-index="03" aria-label="Resume">Resume</button>
+        <button class="nav-link" type="button" data-nav-link data-target="contact" data-index="04" aria-label="Contact">Contact</button>
+        <span class="nav-signature">University of Moratuwa / Sri Lanka</span>
       </nav>
 
       <div id="content" tabindex="-1">
         <article class="page active" data-page="about">
           <header class="page-header intro-header">
-            <h2>About me</h2>
+            <p class="eyebrow">About me</p>
+            <h2>Mechanical design &amp; mechatronics</h2>
             <p class="intro-copy">I'm Dilusha, a Mechanical Engineering undergraduate at the University of Moratuwa. My main interests are mechanical design, product development, robotics, and automation.</p>
             <div class="intro-actions">
               <button class="primary-action" type="button" data-go-to="projects"><ion-icon name="construct-outline" aria-hidden="true"></ion-icon>Explore projects</button>
@@ -98,8 +102,8 @@
             </div>
           </section>
 
-          <section class="content-section" aria-labelledby="about-title">
-            <h3 id="about-title" class="visually-hidden">My background</h3>
+          <section class="content-section about-background" aria-labelledby="about-title">
+            <h3 id="about-title">Across mechanics, electronics &amp; software.</h3>
             <div class="about-copy">
               <p>I'm a Mechanical Engineering undergraduate at the University of Moratuwa with a strong interest in product development, robotics, mechatronics, industrial automation, and R&amp;D. I enjoy turning engineering ideas into practical systems, from early concepts and CAD models to automated systems, prototypes, testing, and functional products.</p>
               <p>My core focus is mechanical design and product development, with hands-on experience in SolidWorks, AutoCAD, mechanism design, mechanical assemblies, rapid prototyping, and basic FEA/CFD. Through academic and innovation projects, I have worked on autonomous robots, UAV mechanisms, wearable IoT devices, gearbox design, and reverse-engineered products.</p>
@@ -234,7 +238,7 @@
         </article>
       </div>
 
-      <footer class="site-footer"><p>&copy; <span data-current-year>2026</span> Dilusha Heshan Hemachandra</p></footer>
+      <footer class="site-footer"><p>&copy; <span data-current-year>2026</span> Dilusha Heshan Hemachandra</p><p>Mechanical design / Robotics / Automation</p></footer>
     </div>
   </main>
 
@@ -245,6 +249,6 @@
   </dialog>
   <script src="./assets/js/icons.js?v=0d82ad15"></script>
   <script src="./assets/js/projects.js?v=40ab99eb"></script>
-  <script src="./assets/js/script.js?v=49f74087"></script>
+  <script src="./assets/js/script.js?v=8619a3ae"></script>
 </body>
 </html>

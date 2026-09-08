@@ -37,6 +37,20 @@ function githubLink(project) {
   return link;
 }
 
+function articleLink(article) {
+  const link = element('a', 'secondary-action project-article-link', 'Read on LinkedIn');
+  link.href = article.url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.title = 'Read the article on LinkedIn in a new tab';
+  link.setAttribute('aria-label', 'Read on LinkedIn (opens in a new tab)');
+  const icon = element('ion-icon');
+  icon.setAttribute('name', 'logo-linkedin');
+  icon.setAttribute('aria-hidden', 'true');
+  link.prepend(icon);
+  return link;
+}
+
 function imageLink(file, caption) {
   const link = element('a', 'gallery-image-link');
   link.href = mediaPath(file);
@@ -94,9 +108,10 @@ function renderProject(project) {
   const heading = element('h2', '', project.title);
   heading.tabIndex = -1;
   header.append(heading);
-  if (project.githubUrl) {
+  if (project.githubUrl || project.article) {
     const actions = element('div', 'project-actions');
-    actions.append(githubLink(project));
+    if (project.githubUrl) actions.append(githubLink(project));
+    if (project.article) actions.append(articleLink(project.article));
     header.append(actions);
   }
   detail.append(header);
@@ -154,17 +169,7 @@ function renderProject(project) {
     title.id = 'project-article-title';
     article.append(element('p', 'project-article-label', 'From my LinkedIn'), title,
       element('p', '', project.article.description));
-    const link = element('a', 'secondary-action project-article-link', 'Read on LinkedIn');
-    link.href = project.article.url;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.title = 'Read the article on LinkedIn in a new tab';
-    link.setAttribute('aria-label', 'Read on LinkedIn (opens in a new tab)');
-    const icon = element('ion-icon');
-    icon.setAttribute('name', 'logo-linkedin');
-    icon.setAttribute('aria-hidden', 'true');
-    link.prepend(icon);
-    article.append(link);
+    article.append(articleLink(project.article));
     copy.append(article);
   }
   copy.append(element('h3', '', 'My contribution'));
@@ -231,6 +236,13 @@ cards.forEach((card, index) => {
   }
 });
 
+document.querySelectorAll('.work-preview-item figcaption').forEach((caption) => {
+  const arrow = element('ion-icon');
+  arrow.setAttribute('name', 'arrow-forward-outline');
+  arrow.setAttribute('aria-hidden', 'true');
+  caption.append(arrow);
+});
+
 document.querySelectorAll('.certificate-link').forEach((link) => {
   link.title = 'View certificate';
   link.addEventListener('click', (event) => {
@@ -261,6 +273,14 @@ function route(focus = true) {
   }
   document.title = (project ? project.title : 'Dilusha Heshan Hemachandra') + ' | Mechanical Engineering Portfolio';
 }
+
+document.querySelector('.skip-link').addEventListener('click', (event) => {
+  event.preventDefault();
+  const heading = detail.hidden ? document.querySelector('.page.active h2') : detail.querySelector('h2');
+  heading.tabIndex = -1;
+  heading.focus({ preventScroll: true });
+  heading.scrollIntoView({ block: 'start', behavior: 'instant' });
+});
 
 navigationLinks.forEach((link) => {
   link.addEventListener('click', () => { window.location.hash = link.dataset.target; });
