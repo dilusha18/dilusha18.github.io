@@ -118,6 +118,7 @@ function renderProject(project) {
     const img = element('img');
     img.src = mediaPath(file);
     img.alt = '';
+    img.loading = 'lazy';
     button.append(img);
     button.addEventListener('click', () => setGallery(index));
     thumbs.append(button);
@@ -169,6 +170,10 @@ cards.forEach((card, index) => {
   cover.append(media);
   const more = element('a', 'project-open', 'View project');
   more.href = href;
+  const arrow = element('ion-icon');
+  arrow.setAttribute('name', 'arrow-forward-outline');
+  arrow.setAttribute('aria-hidden', 'true');
+  more.append(arrow);
   card.append(more);
 });
 
