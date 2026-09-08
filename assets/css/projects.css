@@ -15,7 +15,7 @@
 .result-badge { display: inline-block; padding: 3px 8px; margin-top: 12px; background: #e7efea; color: var(--green); font: 10px/1.6 var(--mono); text-transform: uppercase; }
 .result-badge--gold { background: var(--accent); color: var(--ink); }
 .tag-list { display: flex; flex-wrap: wrap; gap: 5px 12px; margin-top: 18px; }
-.tag-list li { color: var(--subtle); font: 11px/1.6 var(--mono); }
+.tag-list li { color: var(--subtle); font: 13px/1.6 var(--mono); }
 .project-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: 22px; }
 .project-open { display: inline-flex; align-items: center; gap: 20px; align-self: start; margin-top: 22px; padding: 10px 0; border-bottom: 1px solid var(--ink); font-size: 13px; font-weight: 600; line-height: 1.5; }
 .project-actions .project-open { margin-top: 0; }
@@ -69,7 +69,7 @@
 .detail-copy p, .detail-copy li { color: var(--muted); font-size: 15px; line-height: 1.9; }
 .detail-copy ul:not(.tag-list) { list-style: disc; padding-left: 22px; }
 .detail-copy ul:not(.tag-list) li { padding: 4px 0; }
-.detail-copy .tag-list li { font: 12px/1.7 var(--mono); }
+.detail-copy .tag-list li { font: 14px/1.7 var(--mono); }
 .project-article { margin: 30px 0; padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .project-article .project-article-label { color: var(--blue); font: 11px/1.5 var(--mono); }
 .project-article h3 { margin: 10px 0 14px; }
