@@ -305,6 +305,14 @@ const projectDetails = [
   },
   {
     "id": "uav",
+    "video": "uav-landing-gear.mp4",
+    "videoOptions": {
+      "title": "Landing-gear motion",
+      "poster": "uav-motion-poster.jpg",
+      "autoplay": true,
+      "loop": true,
+      "featured": true
+    },
     "type": "Mechanism design / Ongoing",
     "overview": "A passive multi-link landing-gear mechanism designed to accommodate uneven terrain while keeping the foot trajectory close to vertical.",
     "contributions": [

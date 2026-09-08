@@ -178,14 +178,23 @@ function renderProject(project) {
     copy.append(tags);
   }
   if (project.video) {
-    copy.append(element('h3', '', 'Prototype demonstration'));
+    const options = project.videoOptions || {};
+    const demonstration = options.featured ? element('section', 'project-motion') : copy;
+    const videoTitle = options.title || 'Prototype demonstration';
+    demonstration.append(element('h3', '', videoTitle));
     const video = element('video', 'project-video');
+    video.setAttribute('aria-label', videoTitle);
     video.controls = true;
-    video.preload = 'none';
+    video.autoplay = options.autoplay === true;
+    video.muted = video.autoplay;
+    video.defaultMuted = video.autoplay;
+    video.loop = options.loop === true;
+    video.preload = video.autoplay ? 'auto' : 'none';
     video.playsInline = true;
-    video.poster = mediaPath('smartwall-hardware.jpg');
+    video.poster = mediaPath(options.poster || 'smartwall-hardware.jpg');
     video.src = mediaPath(project.video);
-    copy.append(video);
+    demonstration.append(video);
+    if (options.featured) detail.insertBefore(demonstration, gallery);
   }
   detail.append(copy);
   setGallery(0);
