@@ -314,7 +314,7 @@ const projectDetails = [
       "featured": true
     },
     "type": "Mechanism design / Ongoing",
-    "overview": "A passive multi-link landing-gear mechanism designed to accommodate uneven terrain while keeping the foot trajectory close to vertical.",
+    "overview": "A passive mechanical landing gear system designed to enable Unmanned Aerial Vehicles (UAVs) to securely touch down on unstructured and uneven terrain. By leveraging intelligent kinematic design, this approach achieves autonomous self-leveling without the computational overhead of complex, active sensor-based control systems.",
     "contributions": [
       "Designed and optimised the multi-link mechanism and its geometry.",
       "Evaluated the foot trajectory and motion constraints using MATLAB.",
