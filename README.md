@@ -6,8 +6,8 @@ Personal portfolio for Dilusha Heshan Hemachandra, a Mechanical Engineering unde
 
 - Mechanical design and CAD capabilities
 - Product development, robotics, embedded systems, and IoT work
-- Six selected engineering projects and two ongoing projects
-- Education, A/L results, technical skills, and competition achievements
+- Six selected engineering projects and two ongoing projects, each with a linked detail view and image gallery
+- Education, A/L results, technical skills, and competition achievements with expandable certificate photographs
 - Downloadable CV and direct contact links
 
 ## Built with
@@ -15,11 +15,13 @@ Personal portfolio for Dilusha Heshan Hemachandra, a Mechanical Engineering unde
 - Semantic HTML5
 - Responsive CSS
 - Vanilla JavaScript
-- Ionicons
+- Locally bundled Ionicons (license in `assets/icons-LICENSE`)
 
 ## Live site
 
 The site is intended for GitHub Pages at [dilusha18.github.io](https://dilusha18.github.io/).
+
+Project details support direct links, such as `#projects/extruder`. Project descriptions and gallery entries are maintained in `assets/js/projects.js`.
 
 ## Local preview
 
