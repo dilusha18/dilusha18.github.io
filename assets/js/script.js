@@ -196,6 +196,8 @@ function renderProject(project) {
     video.loop = options.loop === true;
     video.preload = video.autoplay ? 'auto' : 'none';
     video.playsInline = true;
+    if (options.aspectRatio) video.style.aspectRatio = options.aspectRatio;
+    if (options.objectFit) video.style.objectFit = options.objectFit;
     video.poster = mediaPath(options.poster || 'smartwall-hardware.jpg');
     video.src = mediaPath(project.video);
     demonstration.append(video);

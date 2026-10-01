@@ -337,6 +337,43 @@ const projectDetails = [
     ]
   },
   {
+    "id": "smartsole",
+    "type": "Team Bionix / Wearable product development / Ongoing",
+    "overview": "SmartSole is a diabetic foot pressure monitoring and offloading insole system being developed by Team Bionix at the University of Moratuwa. The design combines an anatomically contoured, 3D-printed TPU insole with spatially graded gyroid infill, six FSR pressure sensors, and an ESP32. A Bluetooth-connected app visualises pressure readings, provides sustained-pressure alerts, records history, and includes a daily foot-care checklist. The aim is to combine passive pressure redistribution with active monitoring in one wearable product.",
+    "contributions": [
+      "Designed the insole CAD geometry, including the contoured shape, arch support, heel cup, and the layout for sensor integration.",
+      "Worked on the electronics for the six-zone pressure-sensing system, integrating FSR sensors with the ESP32 and the power-system layout.",
+      "Developed the app interface for pressure visualisation, alerts, history, and daily foot-care tracking."
+    ],
+    "outcome": "Insole CAD, infill studies, circuit design, and an app demonstration are available. The project is ongoing, with prototype integration, calibration, and validation still to be completed before patient use.",
+    "video": "smartsole-app-demo.mp4",
+    "videoOptions": {
+      "title": "SmartSole app demonstration",
+      "poster": "smartsole-video-poster.jpg",
+      "featured": true,
+      "aspectRatio": "4 / 3",
+      "objectFit": "contain"
+    },
+    "images": [
+      ["smartsole-cad.jpeg", "Contoured insole CAD model showing the heel cup and arch support"],
+      ["smartsole-side-profile.jpeg", "Insole side profile and arch contour"],
+      ["smartsole-report-insole.png", "Insole top view extracted from the Team Bionix report"],
+      ["smartsole-report-cad-perspective.png", "Perspective CAD view extracted from the report"],
+      ["smartsole-report-infill-zones.png", "Insole infill-zone study extracted from the report"],
+      ["smartsole-report-gyroid-infill.png", "Gyroid infill study extracted from the report"],
+      ["smartsole-report-slicer-preview.png", "Layer and internal-infill preview extracted from the report"],
+      ["smartsole-pressure-zones.jpeg", "Anatomical pressure-zone reference illustration used in the design study"],
+      ["smartsole-report-circuit.png", "Six-sensor ESP32 circuit and power-system layout extracted from the report"],
+      ["smartsole-report-app-pressure.png", "App pressure-monitoring screen from the report"],
+      ["smartsole-report-app-home.png", "App home and daily-care progress screen from the report"],
+      ["smartsole-report-app-history.png", "App history and reports screen from the report"],
+      ["smartsole-report-app-care.png", "App daily foot-care checklist from the report"],
+      ["smartsole-app-concept.jpeg", "SmartSole mobile interface concept visual"],
+      ["smartsole-dashboard-concept.jpeg", "SmartSole dashboard concept visual across desktop, tablet, and mobile"],
+      ["smartsole-infill-note.jpeg", "Infill planning note supplied with the insole CAD study"]
+    ]
+  },
+  {
     "id": "engine",
     "type": "Extra Designs / Mechanical CAD",
     "overview": "An engine assembly design study showing the relationship between pistons, connecting rods, the crankshaft, valve mechanism, and timing gears. The cutaway view brings the internal arrangement into focus.",

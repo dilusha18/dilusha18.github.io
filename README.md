@@ -6,10 +6,10 @@ Personal portfolio for Dilusha Heshan Hemachandra, a Mechanical Engineering unde
 
 - Mechanical design and CAD capabilities
 - Product development, robotics, embedded systems, and IoT work
-- Six selected engineering projects, two ongoing projects, and an extra engine design study, each with a linked detail view and image gallery
+- Six selected engineering projects, three ongoing projects, and an extra engine design study, each with a linked detail view and image gallery
 - Education, A/L results, technical skills, and competition achievements with expandable certificate photographs
 - Downloadable CV and direct contact links
-- Team GitHub links, a Pattiya LinkedIn article, and a looping UAV mechanism video
+- Team GitHub links, a Pattiya LinkedIn article, a looping UAV mechanism video, and a SmartSole app demonstration
 
 ## Built with
 
