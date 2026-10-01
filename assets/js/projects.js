@@ -369,8 +369,7 @@ const projectDetails = [
       ["smartsole-report-app-history.png", "App history and reports screen from the report"],
       ["smartsole-report-app-care.png", "App daily foot-care checklist from the report"],
       ["smartsole-app-concept.jpeg", "SmartSole mobile interface concept visual"],
-      ["smartsole-dashboard-concept.jpeg", "SmartSole dashboard concept visual across desktop, tablet, and mobile"],
-      ["smartsole-infill-note.jpeg", "Infill planning note supplied with the insole CAD study"]
+      ["smartsole-dashboard-concept.jpeg", "SmartSole dashboard concept visual across desktop, tablet, and mobile"]
     ]
   },
   {
