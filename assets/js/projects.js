@@ -300,6 +300,10 @@ const projectDetails = [
       [
         "extruder-diagram.jpg",
         "Overall fish-feed extruder arrangement, reproduced from the group design report"
+      ],
+      [
+        "extruder-gearbox-cad.png",
+        "Gearbox CAD assembly showing the gears, shafts, bearings, and shifting mechanism inside the housing"
       ]
     ]
   },
